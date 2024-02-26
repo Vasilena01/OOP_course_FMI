@@ -1,2 +1,11 @@
 ﻿  OOP - PRAKTIKUM 1.cpp
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 1\OOP - PRAKTIKUM 1.cpp(80,23): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 1\OOP - PRAKTIKUM 1.cpp(94,23): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 1\OOP - PRAKTIKUM 1.cpp(111,23): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 1\OOP - PRAKTIKUM 1.cpp(159,5): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 1\OOP - PRAKTIKUM 1.cpp(160,43): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 1\OOP - PRAKTIKUM 1.cpp(346,26): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 1\OOP - PRAKTIKUM 1.cpp(118): warning C4715: 'getBookIndex': not all control paths return a value
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 1\OOP - PRAKTIKUM 1.cpp(248): warning C4715: 'getCourse': not all control paths return a value
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 1\OOP - PRAKTIKUM 1.cpp(440): warning C4715: 'getCorrectAnswer': not all control paths return a value
   OOP - PRAKTIKUM 1.vcxproj -> D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 1\x64\Debug\OOP - PRAKTIKUM 1.exe
