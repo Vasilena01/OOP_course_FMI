@@ -177,10 +177,10 @@ void getBookFromLibrary(Library& library)
     std::cin >> title;
     int index = 0;
 
+    assert(isInLibrary(title, library));
+
     if (isInLibrary(title, library))
         index = getBookIndex(title, library);
-    else
-        assert(isInLibrary(title, library));
 
     Book currentBook = library.books[index];
 
@@ -200,10 +200,10 @@ void returnBook(Library& library)
     std::cin >> title;
     int index;
 
+    assert(isInLibrary(title, library));
+
     if (isInLibrary(title, library))
         index = getBookIndex(title, library);
-    else
-        assert(isInLibrary(title, library));
 
     Book currentBook = library.books[index];
     if (currentBook.availability == 0)
@@ -227,7 +227,7 @@ enum class Course
 
 struct Student
 {
-    unsigned fn;
+    unsigned fn = 10000;
     Course course;
     double grade;
 };
@@ -265,10 +265,8 @@ Student initStudent()
     unsigned fn;
     double grade;
 
-    do
-    {
-        std::cin >> fn;
-    } while (fn < 10000 || fn > 99999);
+    std::cin >> fn;
+    assert(fn < 10000 || fn > 99999);
 
     std::cin >> grade;
 
@@ -398,7 +396,8 @@ enum class AnswerLetters
     A = 1,
     B,
     C,
-    D
+    D,
+    ANOTHER
 };
 
 struct Answer
@@ -435,6 +434,7 @@ AnswerLetters getCorrectAnswer(const Question& question)
     case 2: return AnswerLetters::B;
     case 3: return AnswerLetters::C;
     case 4: return AnswerLetters::D;
+    default: return AnswerLetters::ANOTHER;
     }
 }
 
@@ -489,6 +489,7 @@ const char* getCorrectAnswerStr(const Question& question)
     case AnswerLetters::B: return "B is the correct answer!";
     case AnswerLetters::C: return "C is the correct answer!";
     case AnswerLetters::D: return "D is the correct answer!";
+    case AnswerLetters::ANOTHER:
     default: return "You have not given a valid answer to this question.";
     }
 }
