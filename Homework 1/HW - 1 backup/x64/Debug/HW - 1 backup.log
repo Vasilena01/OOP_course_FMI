@@ -1,0 +1,15 @@
+﻿  HW - 1 backup.cpp
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\HW - 1 backup.cpp(41,17): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\HW - 1 backup.cpp(213,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\HW - 1 backup.cpp(238,13): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\HW - 1 backup.cpp(273,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\HW - 1 backup.cpp(309,44): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\HW - 1 backup.cpp(330,52): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\HW - 1 backup.cpp(355,15): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\HW - 1 backup.cpp(429,33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\HW - 1 backup.cpp(454,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\HW - 1 backup.cpp(517,7): warning C4101: 'maxSymbolsCountPerCol': unreferenced local variable
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\HW - 1 backup.cpp(32): warning C4172: returning address of local variable or temporary: buff
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\HW - 1 backup.cpp(120): warning C4172: returning address of local variable or temporary: buff
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\HW - 1 backup.cpp(173): warning C4172: returning address of local variable or temporary: decoded
+  HW - 1 backup.vcxproj -> D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\HW - 1 backup\x64\Debug\HW - 1 backup.exe

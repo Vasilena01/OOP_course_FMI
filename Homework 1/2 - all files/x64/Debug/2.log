@@ -1,0 +1,8 @@
+﻿  2.cpp
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\2\2.cpp(23,14): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\2\2.cpp(25,11): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\2\2.cpp(475,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\2\2.cpp(511,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\2\2.cpp(512,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\2\2.cpp(260): warning C4172: returning address of local variable or temporary: buff
+  2.vcxproj -> D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\2\x64\Debug\2.exe

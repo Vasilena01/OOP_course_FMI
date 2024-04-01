@@ -1,0 +1,14 @@
+﻿  1.cpp
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\1\1.cpp(44,17): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\1\1.cpp(257,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\1\1.cpp(314,13): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\1\1.cpp(343,21): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\1\1.cpp(396,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\1\1.cpp(460,13): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\1\1.cpp(524,32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\1\1.cpp(549,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\1\1.cpp(627,6): warning C4101: 'maxSymbolsCountPerCol': unreferenced local variable
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\1\1.cpp(32): warning C4172: returning address of local variable or temporary: buff
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\1\1.cpp(109): warning C4172: returning address of local variable or temporary: decoded
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\1\1.cpp(217): warning C4172: returning address of local variable or temporary: buff
+  1.vcxproj -> D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 1\1\x64\Debug\1.exe
