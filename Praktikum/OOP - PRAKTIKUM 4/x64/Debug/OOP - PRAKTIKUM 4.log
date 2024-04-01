@@ -1,0 +1,3 @@
+﻿  OOP - PRAKTIKUM 4.cpp
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 4\OOP - PRAKTIKUM 4.cpp(53,20): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+  OOP - PRAKTIKUM 4.vcxproj -> D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 4\x64\Debug\OOP - PRAKTIKUM 4.exe

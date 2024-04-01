@@ -1,3 +1,4 @@
 ﻿  OOP PRAKTIKUM - 3.cpp
-D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP PRAKTIKUM - 3\OOP PRAKTIKUM - 3.cpp(263,33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  OOP PRAKTIKUM - 3.vcxproj -> D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP PRAKTIKUM - 3\x64\Debug\OOP PRAKTIKUM - 3.exe
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 3\OOP PRAKTIKUM - 3.cpp(263,33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 3\OOP PRAKTIKUM - 3.cpp(505,10): warning C4101: 'product': unreferenced local variable
+  OOP PRAKTIKUM - 3.vcxproj -> D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Praktikum\OOP - PRAKTIKUM 3\x64\Debug\OOP PRAKTIKUM - 3.exe

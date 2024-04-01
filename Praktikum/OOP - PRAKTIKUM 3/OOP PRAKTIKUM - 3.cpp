@@ -510,5 +510,5 @@ int main()
 	//saveProductInFile(fileName, product);
 	//getProductFromFileByName(fileName, product);
 	//editProductQuantity(fileName, product);
-	sortProductsBasedOnCategoryInNewFile(fileName, product, "productsBasedOnCategory_zad2.txt");
+	//sortProductsBasedOnCategoryInNewFile(fileName, product, "productsBasedOnCategory_zad2.txt");
 }
