@@ -1,0 +1,10 @@
+﻿  1.cpp
+  MultiSet.cpp
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 2\1 - all files\MultiSet.cpp(15,20): warning C4018: '<': signed/unsigned mismatch
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 2\1 - all files\MultiSet.cpp(61,55): warning C4244: '=': conversion from 'double' to 'unsigned int', possible loss of data
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 2\1 - all files\MultiSet.cpp(227,20): warning C4018: '>': signed/unsigned mismatch
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 2\1 - all files\MultiSet.cpp(240,20): warning C4018: '<=': signed/unsigned mismatch
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 2\1 - all files\MultiSet.cpp(312,20): warning C4018: '<=': signed/unsigned mismatch
+D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 2\1 - all files\MultiSet.cpp(351,20): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  1.vcxproj -> D:\Projects\C++\ООП - ЗАДАЧИ ОТ СЕМИНАРИ И ПРАКТИКУМ\Homework 2\1 - all files\x64\Debug\1.exe
