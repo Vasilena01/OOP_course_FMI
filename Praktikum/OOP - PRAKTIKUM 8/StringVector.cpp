@@ -1,7 +1,7 @@
 #include "StringVector.h"
 
 
-// BIG 4
+// BIG 6
 void StringVector::copyFrom(const StringVector& other)
 {
 	vector = new MyString[other.vectorCapacity];
@@ -82,7 +82,7 @@ void StringVector::resize(unsigned newAllocatedSize)
 		newVector[i] = vector[i];
 	}
 	delete[] vector;
-	newVector = vector;
+	vector = newVector;
 	vectorCapacity = newAllocatedSize;
 }
 
