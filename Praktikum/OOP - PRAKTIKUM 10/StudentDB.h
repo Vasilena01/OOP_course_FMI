@@ -13,7 +13,10 @@ public:
 	~StudentDB();
 
 	unsigned getSize() const;
+	unsigned getCapacity() const;
 	Student* getStudents() const;
+	void setSize(unsigned newSize);
+	void setStudents(Student* newStudents);
 
 	void addAtBack(const Student& newStudent);
 	void addAtBack(Student&& newStudent);

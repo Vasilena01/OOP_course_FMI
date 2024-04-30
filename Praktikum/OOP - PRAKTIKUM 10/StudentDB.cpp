@@ -55,9 +55,24 @@ unsigned StudentDB::getSize() const
 	return size;
 }
 
+unsigned StudentDB::getCapacity() const
+{
+	return capacity;
+}
+
 Student* StudentDB::getStudents() const
 {
 	return students;
+}
+
+void StudentDB::setSize(unsigned newSize)
+{
+	size = newSize;
+}
+
+void StudentDB::setStudents(Student* newStudents)
+{
+	students = newStudents;
 }
 
 

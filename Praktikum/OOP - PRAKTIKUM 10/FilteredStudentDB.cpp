@@ -1,55 +1,82 @@
 #include "FilteredStudentDB.h"
 
-FilteredStudentDB& FilteredStudentDB::operator=(const FilteredStudentDB& other)
+void FilteredStudentDB::filterByCriteria(const Criteria& cr, unsigned number)
 {
-	StudentDB::operator=(other);
-	return *this;
+	switch (cr)
+	{
+	case Criteria::sortByFn:return filterByFn(number);
+	case Criteria::sortByCourse:return filterByCourse(number);
+	}
 }
 
-void FilteredStudentDB::filterDataBase(const char* name)
+void FilteredStudentDB::filterByName(const char* name)
 {
-	FilteredStudentDB newDatabase;
+	Student* newStudents = new Student[this->getCapacity() + 1];
+	unsigned newSize = 0;
 
-	for (int i = 0; i < this->getSize() - 1; i++)
+	for (int i = 0; i < this->getSize(); i++)
 	{
 		if (this->getStudents()[i].getName() == name)
-			newDatabase.addAtBack(this->getStudents()[i]);
+		{
+			newStudents[newSize++] = this->getStudents()[i];
+		}
 	}
 
-	*this = newDatabase;
-	//return newDatabase;
+	delete[] this->getStudents();
+	this->setStudents(newStudents);
+	this->setSize(newSize);
 }
 
-void FilteredStudentDB::filterDataBase(const Criteria cr, unsigned number)
+void FilteredStudentDB::filterByFn(unsigned fn)
 {
-	FilteredStudentDB newDatabase;
+	Student* newStudents = new Student[this->getCapacity() + 1];
+	unsigned newSize = 0;
 
-	for (int i = 0; i < this->getSize() - 1; i++)
+	for (int i = 0; i < this->getSize(); i++)
 	{
-		if (cr == Criteria::sortByFn && this->getStudents()[i].getFn() == number)
+		if (this->getStudents()[i].getFn() == fn)
 		{
-			newDatabase.addAtBack(this->getStudents()[i]);
-		}
-
-		if (cr == Criteria::sortByCourse && this->getStudents()[i].getCourse() == number)
-		{
-			newDatabase.addAtBack(this->getStudents()[i]);
+			newStudents[newSize++] = this->getStudents()[i];
 		}
 	}
 
-	*this = newDatabase;
+	delete[] this->getStudents();
+	this->setStudents(newStudents);
+	this->setSize(newSize);
+}
+
+void FilteredStudentDB::filterByCourse(unsigned course)
+{
+	Student* newStudents = new Student[this->getCapacity() + 1];
+	unsigned newSize = 0;
+
+	for (int i = 0; i < this->getSize(); i++)
+	{
+		if (this->getStudents()[i].getCourse() == course)
+		{
+			newStudents[newSize++] = this->getStudents()[i];
+		}
+	}
+
+	delete[] this->getStudents();
+	this->setStudents(newStudents);
+	this->setSize(newSize);
 }
 
 void FilteredStudentDB::saveFirstN(unsigned N)
 {
-	FilteredStudentDB newDatabase;
+	if (N > this->getSize())
+		return;
+
+	Student* newStudents = new Student[this->getCapacity() + 1];
 
 	for (int i = 0; i < N; i++)
 	{
-		newDatabase.addAtBack(this->getStudents()[i]);
+		newStudents[i] = this->getStudents()[i];
 	}
 
-	//delete[] this;
-	*this = newDatabase;
+	delete[] this->getStudents();
+	this->setStudents(newStudents);
+	this->setSize(N);
 }
 

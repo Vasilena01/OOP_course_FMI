@@ -21,7 +21,7 @@ int main()
 
 	/*Zad 2*/
 	Student student1("vasi", 12346, 3);
-	Student student2("dani", 12345, 2);
+	Student student2("dani", 12346, 2);
 	Student student3("enisel", 123456, 1);
 
 	StudentDB database(5);
@@ -44,7 +44,8 @@ int main()
 	filteredStudentDB.addAtBack(student2);
 	filteredStudentDB.addAtBack(student3);
 
-	filteredStudentDB.filterDataBase("vasi");
-	filteredStudentDB.filterDataBase(Criteria::sortByCourse, 3);
+	//filteredStudentDB.filterByName("enisel");
+	//filteredStudentDB.filterByCriteria(Criteria::sortByCourse, 1);
+	filteredStudentDB.saveFirstN(2);
 	filteredStudentDB.display();
 }
