@@ -1,3 +1,4 @@
+#include "HelperFunctions.h"
 #include "PartialFunctionFactory.h"
 #include "PartialFunctionByCriteria.h"
 #include "MaxPartialFunction.h"
@@ -6,30 +7,21 @@
 #include "BoolFunctionalityClass.h"
 #include "DefinedFunctionalityClass.h"
 #include "UndefinedFunctionalityClass.h"
-#include <fstream>
-#include <sstream>
 
-size_t getFileSize(std::ifstream& file)
+void readFunctionFromFile(PartialFunction** partialFunctions, char* buffer, uint16_t N)
 {
-	size_t currentPos = file.tellg();
-	file.seekg(0, std::ios::end);
-	size_t fileSize = file.tellg();
-	file.seekg(currentPos);
-	return fileSize;
-}
-
-size_t getCountToTerminatingZero(const char* buffer)
-{
-	size_t counter = 0;
-
-	while (*buffer)
+	for (size_t i = 0; i < N; i++)
 	{
-		counter++;
-		buffer++;
-	}
-	buffer++;
+		std::stringstream ss(buffer);
 
-	return counter;
+		size_t currentFilenameLength = HelperFunctions::getCountToSentinel(buffer);
+		buffer += currentFilenameLength + 1;
+		char* currentFileName = new char[currentFilenameLength];
+
+		ss >> currentFileName;
+
+		partialFunctions[i] = PartialFunctionFactory::createFunction(currentFileName);
+	}
 }
 
 PartialFunction* PartialFunctionFactory::createFunction(const char* fileName)
@@ -83,10 +75,11 @@ PartialFunction* PartialFunctionFactory::createFunctionByType(uint16_t N, uint16
 		return createFunctionByCriteria(new UndefinedFunctionalityClass(arguments, N));
 	}
 	case 3:
+	case 4:
 	{
 		PartialFunction** partialFunctions = new PartialFunction * [N];
 
-		size_t fileSize = getFileSize(file);
+		size_t fileSize = HelperFunctions::getFileSize(file);
 		fileSize -= sizeof(uint16_t) * 2;
 
 		char* buffer = new char[fileSize];
@@ -94,30 +87,17 @@ PartialFunction* PartialFunctionFactory::createFunctionByType(uint16_t N, uint16
 
 		try {
 
-			for (size_t i = 0; i < N; i++)
-			{
-				std::stringstream ss(buffer);
-
-				size_t currentFilenameLength = getCountToTerminatingZero(buffer);
-				buffer += currentFilenameLength + 1;
-				char* currentFileName = new char[currentFilenameLength];
-
-				ss >> currentFileName;
-
-				partialFunctions[i] = PartialFunctionFactory::createFunction(currentFileName);
-			}
-
+			readFunctionFromFile(partialFunctions, buffer, N);
+			delete[] buffer;
 		}
 		catch (const std::runtime_error& e) {
 			std::cerr << "Error: " << e.what() << std::endl;
 		}
 
-		return createMaxFunction(partialFunctions, N);
-	}
-	case 4:
-	{
-		// return createMinFunction
-	}
+		if(T == 3)
+			return createMaxFunction(partialFunctions, N);
+		return createMinFunction(partialFunctions, N);
+	}	
 	default:
 		throw std::invalid_argument("Invalid value for N!");
 		break;

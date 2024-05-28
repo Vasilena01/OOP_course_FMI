@@ -144,6 +144,7 @@
     <ClInclude Include="DefinedFunctionalityClass.h" />
     <ClInclude Include="ExtremesFunctionHolder.h" />
     <ClInclude Include="FunctionsCollection.h" />
+    <ClInclude Include="HelperFunctions.h" />
     <ClInclude Include="MaxPartialFunction.h" />
     <ClInclude Include="MinPartialFunction.h" />
     <ClInclude Include="Pair.hpp" />
