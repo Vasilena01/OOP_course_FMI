@@ -1,4 +1,4 @@
-#include "PartialFunctionByCriteria.h"
+/*#include "PartialFunctionByCriteria.h"
 
 PartialFunctionByCriteria::PartialFunctionByCriteria()
 {
@@ -47,4 +47,4 @@ bool PartialFunctionByCriteria::isDefined(int32_t n) const
 PartialFunction* PartialFunctionByCriteria::clone() const
 {
 	return new PartialFunctionByCriteria(*this);
-}
+}*/

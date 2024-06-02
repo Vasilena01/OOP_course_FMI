@@ -56,7 +56,7 @@
     <ClInclude Include="Pair.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PartialFunctionByCriteria.h">
+    <ClInclude Include="PartialFunctionByCriteria.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MinPartialFunction.h">

@@ -149,7 +149,7 @@
     <ClInclude Include="MinPartialFunction.h" />
     <ClInclude Include="Pair.hpp" />
     <ClInclude Include="PartialFunction.h" />
-    <ClInclude Include="PartialFunctionByCriteria.h" />
+    <ClInclude Include="PartialFunctionByCriteria.hpp" />
     <ClInclude Include="PartialFunctionFactory.h" />
     <ClInclude Include="UndefinedFunctionalityClass.h" />
     <ClInclude Include="Vector.hpp" />

@@ -23,3 +23,8 @@ const Pair<bool, int32_t>& BoolFunctionalityClass::operator()(int32_t n) const
 
 	return Pair<bool, int32_t>(true, 0);
 }
+
+BaseFunctionalityClass* BoolFunctionalityClass::clone() const
+{
+	return new BoolFunctionalityClass(*this);
+}

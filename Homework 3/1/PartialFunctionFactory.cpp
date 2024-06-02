@@ -1,6 +1,6 @@
-#include "HelperFunctions.h"
 #include "PartialFunctionFactory.h"
-#include "PartialFunctionByCriteria.h"
+#include "HelperFunctions.h"
+#include "PartialFunctionByCriteria.hpp"
 #include "MaxPartialFunction.h"
 #include "MinPartialFunction.h"
 #include "BaseFunctionalityClass.h"
@@ -55,24 +55,27 @@ PartialFunction* PartialFunctionFactory::createFunctionByType(uint16_t N, uint16
 		int32_t* arguments = new int32_t[N];
 		int32_t* results = new int32_t[N];
 
-		file.read((char*)&arguments, sizeof(int32_t) * N);
-		file.read((char*)&results, sizeof(int32_t) * N);
+		file.read((char*)arguments, sizeof(int32_t) * N);
+		file.read((char*)results, sizeof(int32_t) * N);
 
-		return createFunctionByCriteria(new DefinedFunctionalityClass(arguments, results, N));
+		DefinedFunctionalityClass function(arguments, results, N);
+		return new PartialFunctionByCriteria<DefinedFunctionalityClass>(function);
 	}
 	case 1:
 	{
 		int32_t* undefinedResults = new int32_t[N];
 		file.read((char*)&undefinedResults, sizeof(int32_t) * N);
 
-		return createFunctionByCriteria(new UndefinedFunctionalityClass(undefinedResults, N));
+		UndefinedFunctionalityClass function(undefinedResults, N);
+		return new PartialFunctionByCriteria<UndefinedFunctionalityClass>(function);
 	}
 	case 2:
 	{
 		int32_t* arguments = new int32_t[N];
 		file.read((char*)&arguments, sizeof(int32_t) * N);
 
-		return createFunctionByCriteria(new UndefinedFunctionalityClass(arguments, N));
+		BoolFunctionalityClass function(arguments, N);
+		return new PartialFunctionByCriteria<BoolFunctionalityClass>(function);
 	}
 	case 3:
 	case 4:
@@ -102,11 +105,6 @@ PartialFunction* PartialFunctionFactory::createFunctionByType(uint16_t N, uint16
 		throw std::invalid_argument("Invalid value for N!");
 		break;
 	}
-}
-
-PartialFunction* PartialFunctionFactory::createFunctionByCriteria(const BaseFunctionalityClass* obj)
-{
-	return new PartialFunctionByCriteria(obj);
 }
 
 PartialFunction* PartialFunctionFactory::createMaxFunction(PartialFunction** functions, uint16_t N)

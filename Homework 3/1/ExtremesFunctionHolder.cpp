@@ -2,6 +2,9 @@
 
 ExtremesFunctionHolder::ExtremesFunctionHolder(PartialFunction** functions, uint16_t N)
 {
+	if(!functions)
+		throw std::invalid_argument("Nullptr was passed!");
+
 	for (size_t i = 0; i < N; i++)
 	{
 		functionsCollection.addFunction(functions[i]);

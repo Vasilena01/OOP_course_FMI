@@ -23,3 +23,8 @@ const Pair<bool, int32_t>& UndefinedFunctionalityClass::operator()(int32_t n) co
 
 	return Pair<bool, int32_t>(true, n);
 }
+
+BaseFunctionalityClass* UndefinedFunctionalityClass::clone() const
+{
+	return new UndefinedFunctionalityClass(*this);
+}
