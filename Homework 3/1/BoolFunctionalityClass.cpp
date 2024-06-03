@@ -4,8 +4,7 @@ BoolFunctionalityClass::BoolFunctionalityClass(const int32_t* arguments, uint16_
 {
 	for (size_t i = 0; i < N; i++)
 	{
-		Pair<int32_t, int32_t> newPair(arguments[i], 1);
-		pairsVector.pushBack(newPair);
+		valuesVector.pushBack(arguments[i]);
 	}
 
 	delete[] arguments;
@@ -13,9 +12,9 @@ BoolFunctionalityClass::BoolFunctionalityClass(const int32_t* arguments, uint16_
 
 const Pair<bool, int32_t>& BoolFunctionalityClass::operator()(int32_t n) const
 {
-	for (size_t i = 0; i < pairsVector.getSize(); i++)
+	for (size_t i = 0; i < valuesVector.getSize(); i++)
 	{
-		if (pairsVector[i].getFirst() == n)
+		if (valuesVector[i] == n)
 		{
 			return Pair<bool, int32_t>(true, 1);
 		}
@@ -24,7 +23,7 @@ const Pair<bool, int32_t>& BoolFunctionalityClass::operator()(int32_t n) const
 	return Pair<bool, int32_t>(true, 0);
 }
 
-BaseFunctionalityClass* BoolFunctionalityClass::clone() const
+BaseFunctionalityClassWithoutPairs* BoolFunctionalityClass::clone() const
 {
 	return new BoolFunctionalityClass(*this);
 }

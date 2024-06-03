@@ -1,8 +1,7 @@
 #pragma once
 #include "PartialFunction.h";
-#include "BaseFunctionalityClass.h";
-#include "UndefinedFunctionalityClass.h";
 #include "DefinedFunctionalityClass.h";
+#include "UndefinedFunctionalityClass.h";
 #include "BoolFunctionalityClass.h";
 
 template <typename T>
@@ -26,12 +25,12 @@ PartialFunctionByCriteria<T>::PartialFunctionByCriteria(const T& function)
 template<typename T>
 int32_t PartialFunctionByCriteria<T>::operator()(int32_t n) const
 {
-	Pair<bool, int32_t> toReturn = function(n);
+	Pair<bool, int32_t> value = function(n);
 
-	if (!toReturn.getFirst())
+	if (!value.getFirst())
 		throw std::invalid_argument("Function is not defined for this point!");
 
-	return toReturn.getSecond();
+	return value.getSecond();
 }
 
 template<typename T>

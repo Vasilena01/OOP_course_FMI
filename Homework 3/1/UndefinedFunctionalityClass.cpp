@@ -4,8 +4,7 @@ UndefinedFunctionalityClass::UndefinedFunctionalityClass(const int32_t* undefine
 {
 	for (size_t i = 0; i < N; i++)
 	{
-		Pair<int32_t, int32_t> newPair(undefinedResults[i], 0);
-		pairsVector.pushBack(newPair);
+		valuesVector.pushBack(undefinedResults[i]);
 	}
 
 	delete[] undefinedResults;
@@ -13,9 +12,9 @@ UndefinedFunctionalityClass::UndefinedFunctionalityClass(const int32_t* undefine
 
 const Pair<bool, int32_t>& UndefinedFunctionalityClass::operator()(int32_t n) const
 {
-	for (size_t i = 0; i < pairsVector.getSize(); i++)
+	for (size_t i = 0; i < valuesVector.getSize(); i++)
 	{
-		if (pairsVector[i].getFirst() == n)
+		if (valuesVector[i] == n)
 		{
 			return Pair<bool, int32_t>(false, 0);
 		}
@@ -24,7 +23,7 @@ const Pair<bool, int32_t>& UndefinedFunctionalityClass::operator()(int32_t n) co
 	return Pair<bool, int32_t>(true, n);
 }
 
-BaseFunctionalityClass* UndefinedFunctionalityClass::clone() const
+BaseFunctionalityClassWithoutPairs* UndefinedFunctionalityClass::clone() const
 {
 	return new UndefinedFunctionalityClass(*this);
 }

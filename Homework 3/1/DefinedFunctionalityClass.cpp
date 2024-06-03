@@ -23,7 +23,7 @@ const Pair<bool, int32_t>& DefinedFunctionalityClass::operator()(int32_t n) cons
 	return Pair<bool, int32_t>(false, 0);
 }
 
-BaseFunctionalityClass* DefinedFunctionalityClass::clone() const
+BaseFunctionalityClassWithPairs* DefinedFunctionalityClass::clone() const
 {
 	return new DefinedFunctionalityClass(*this);
 }

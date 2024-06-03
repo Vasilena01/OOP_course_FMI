@@ -3,7 +3,6 @@
 #include "PartialFunctionByCriteria.hpp"
 #include "MaxPartialFunction.h"
 #include "MinPartialFunction.h"
-#include "BaseFunctionalityClass.h"
 #include "BoolFunctionalityClass.h"
 #include "DefinedFunctionalityClass.h"
 #include "UndefinedFunctionalityClass.h"
@@ -64,7 +63,7 @@ PartialFunction* PartialFunctionFactory::createFunctionByType(uint16_t N, uint16
 	case 1:
 	{
 		int32_t* undefinedResults = new int32_t[N];
-		file.read((char*)&undefinedResults, sizeof(int32_t) * N);
+		file.read((char*)undefinedResults, sizeof(int32_t) * N);
 
 		UndefinedFunctionalityClass function(undefinedResults, N);
 		return new PartialFunctionByCriteria<UndefinedFunctionalityClass>(function);
@@ -72,7 +71,7 @@ PartialFunction* PartialFunctionFactory::createFunctionByType(uint16_t N, uint16
 	case 2:
 	{
 		int32_t* arguments = new int32_t[N];
-		file.read((char*)&arguments, sizeof(int32_t) * N);
+		file.read((char*)arguments, sizeof(int32_t) * N);
 
 		BoolFunctionalityClass function(arguments, N);
 		return new PartialFunctionByCriteria<BoolFunctionalityClass>(function);

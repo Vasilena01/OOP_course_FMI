@@ -134,12 +134,13 @@
     <ClCompile Include="FunctionsCollection.cpp" />
     <ClCompile Include="MaxPartialFunction.cpp" />
     <ClCompile Include="MinPartialFunction.cpp" />
-    <ClCompile Include="PartialFunctionByCriteria.cpp" />
     <ClCompile Include="PartialFunctionFactory.cpp" />
+    <ClCompile Include="RunProjectClass.cpp" />
     <ClCompile Include="UndefinedFunctionalityClass.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BaseFunctionalityClass.h" />
+    <ClInclude Include="BaseFunctionalityClassWithoutPairs.h" />
+    <ClInclude Include="BaseFunctionalityClassWithPairs.h" />
     <ClInclude Include="BoolFunctionalityClass.h" />
     <ClInclude Include="DefinedFunctionalityClass.h" />
     <ClInclude Include="ExtremesFunctionHolder.h" />
@@ -151,6 +152,7 @@
     <ClInclude Include="PartialFunction.h" />
     <ClInclude Include="PartialFunctionByCriteria.hpp" />
     <ClInclude Include="PartialFunctionFactory.h" />
+    <ClInclude Include="RunProjectClass.h" />
     <ClInclude Include="UndefinedFunctionalityClass.h" />
     <ClInclude Include="Vector.hpp" />
   </ItemGroup>
